@@ -109,36 +109,7 @@
   </div>
 
 
-  <footer class="page-footer #263238 blue-grey darken-4">
-        <div class="container">
-            <div class="row">
-                <div class="col l6 s12">
-                    <h5 class="white-text"> Content</h5>
-                    <p class="grey-text text-lighten-4"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officiis neque inventore soluta praesentium. Totam, dolore eum. Quas quisquam, alias nihil, recusandae officiis hic libero mollitia numquam cumque ullam quia commodi.</p>
-                </div>
-                <div class="col l4 offset-l2 s12">
-                    <h5 class="white-text">Contact</h5>
-                    <ul>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="https://www.facebook.com/alvarosalvador.florestirado" target="_blank">Alvaro</a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="https://www.facebook.com/IsThatBoi" target="_blank">Fernando</a>
-                        </li>
-                        <li>
-                            <a class="grey-text text-lighten-3" href="https://www.facebook.com/0114Leonel" target="_blank">Leonel</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-copyright">
-            <div class="container">
-                <a href="http://projectamigo.org" target="_blank">Project Amigo</a> 936 B 7th St, #168 Novato, CA 94945 info@projectamigo.org
-            </div>
-        </div>
-    </footer>
-
+  
 
 
 

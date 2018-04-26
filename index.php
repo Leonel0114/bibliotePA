@@ -15,6 +15,8 @@
 </head>
 
 <body class>
+
+
     <nav class="grey">
         <div class="header container">
             <a href="index.php" class="brand-logo"> BibliotePA</a>
@@ -30,6 +32,7 @@
         </div>
     
     </nav>
+
 
    <div class="slider">
         <ul class="slides">
@@ -70,6 +73,7 @@
     </div>
 
     
+
 
 
     <footer class="page-footer #263238 blue-grey darken-4">

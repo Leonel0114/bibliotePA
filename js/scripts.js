@@ -53,3 +53,55 @@ $(document).ready(function() {
 
   }
 
+
+function rellenar(array) {
+
+
+  var cardsToShow = '';
+
+
+
+  jQuery.each(array, function (index, value) {
+      console.log(index, value)
+
+
+
+      var colour;
+
+      if(value.Estado=="Ocupado" ){
+
+          colour = "#37474f"
+      }else {colour="#00695c"}
+
+      // Por cada registro en el array se agrega uno de estos
+      cardsToShow += '<div id=card' + value.codigo + ' class="col s12 m6 l3">' +
+          '                <div class="card small animated fadeInUp"  style="background-color:'+colour+'">' +
+          '                    <div class="card-content white-text">' +
+          '                        <span class="card-title">' + value.nombre + '</span>' +
+          '                        <p>' + value.autor + '</p>' +
+          '                        <p>' + value.Estado + '</p>' +
+          '                        <p>' + value.genero + '</p>' +
+          '                    </div>' +
+          '                </div>' +
+          '            </div>';
+  })
+
+
+  $('#cards').html(cardsToShow);
+}
+
+// La función que manda a llamar mi PHP
+function getData() {
+  $.ajax({
+      type: 'POST',
+      url: 'controllers/dross.php',
+
+      success: function (response) {
+          console.log(response);
+
+
+          var mylibros =JSON.parse(response);
+          rellenar(mylibros);
+      }
+  });
+}
