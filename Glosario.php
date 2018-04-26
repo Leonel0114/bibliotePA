@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -20,8 +19,11 @@
     <link rel="stylesheet" href="css/animate.css">
 </head>
 
-</head>
-<nav class="blue-grey darken-4">
+
+
+    
+<body class="container gray lighten-2">
+<nav class="blue-grey darken-2">
         <div class="nav-wrapper container">
             <a href="index.php" class="brand-logo"> BibliotePA</a>
 
@@ -34,8 +36,7 @@
                 </li>
             </ul>
         </div>
-    
-<body class="container gray lighten-2">
+        
     <div class="row">
         <h1 class="title col s12" style="color:chocolate;">Mostrando Datos</h1>
     </div>
@@ -61,7 +62,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
 
     <!-- Mis Scripts -->
-    <script src="js/sctips.js"></script>
+    <script src="js/scripts.js"></script>
 
 </body>
 

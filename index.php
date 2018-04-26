@@ -26,7 +26,7 @@
                     <a href="Login.php">Login</a>
                 </li>
                 <li>
-                    <a href="Buscar.php">Buscar Libros</a>
+                    <a href="Glosario.php">Buscar Libros</a>
                 </li>
             </ul>
         </div>
