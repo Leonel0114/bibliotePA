@@ -22,4 +22,12 @@ width: 100% !important;
     width: 100%;
 }
 
+.wide{
+    width: 100% !important;
+}
+
+.nomar{
+    margin: none;
+}
+
 .card-image img {}

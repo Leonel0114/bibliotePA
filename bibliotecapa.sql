@@ -28,6 +28,9 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `libros`
 --
 
+CREATE DATABASE bibliotecapa;
+USE bibliotecapa;
+
 CREATE TABLE `libros` (
   `codigo` int(7) NOT NULL,
   `nombre` varchar(50) NOT NULL,

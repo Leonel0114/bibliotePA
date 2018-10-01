@@ -58,7 +58,7 @@
 
 <br>
 
-  <nav class="container">
+  <nav class="container" >
     <div class="nav-wrapper">
       <form>
         <div class="input-field cyan darken-2">
@@ -74,12 +74,16 @@
 
 
 
-
+<br>
   
   <!-- div que se rellena mediante javascript, con los datos sacados de php -->
-  <div id="cards" class="row">
+  <div class="container">
+  <div id="cards" class="row wide nomar">
+
+</div>
 
   </div>
+  
   <br>
 
   <!-- Libreria JQuery -->
