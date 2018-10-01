@@ -7,27 +7,36 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="css/materialize.css">
   <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
   <title>BibliotecaPA</title>
   <link rel="icon" href="img/logo.png">
   <script src="js/jquery.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/scripts.js"></script>
+  
 
 
 </head>
 
 <body>
-  <nav class="blue-grey darken-4"> 
-    <div class="nav-wrapper container ">
-      <a href="index.php" class="brand-logo">Biblioteca ProjectAmigo</a>
-      <ul id="nav-mobile" class="right hide-on-med-and-down">
+  <nav class="transparent z-depth-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.php" class="brand-logo">Logo</a>
+   
+      <ul class="right hide-on-med-and-down">
         <li>
-          <a href="Login.php">Login</a>
-        </li>
-        <li>
-          <a href="Buscar.php">Buscar Libros</a>
+          <a href="Agregar.php">Agregar Libros</a>
         </li>
       </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <a href="#">Navbar Link</a>
+        </li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
     </div>
   </nav>
 
@@ -92,12 +101,13 @@
             <option value="Cofradia de Suchitlan">Cofradia de Suchitlan</option>
             <option value="Suchitlan">Suchitlan</option>
             <option value="Cerro de Ortega">Cerro de Ortega</option>
+            <option value="Queseria">Queseria</option>
           </select>
           <label>Dependencia</label>
         </div>
         <br>
         <div class="col s4"> </div>
-        <a class="btn col s4 centriko" onclick="prueba()">Subir libro!</a>
+        <a class="btn col s4 centriko cyan darken-2" onclick="prueba()">Subir libro!</a>
         <!-- CENTERING THINGS CSS -->
         <div></div>
         <br>
@@ -114,5 +124,5 @@
 
 
 </body>
-
+<script src="js/init.js" ></script>
 </html>

@@ -1,61 +1,3 @@
-function rellenar(array) {
-
-
-  var cardsToShow = '';
-
-
-
-  jQuery.each(array, function (index, value) {
-    console.log(index, value)
-
-
-
-    var colour;
-
-    if (value.Estado == "Ocupado") {
-
-      colour = "#37474f"
-    } else { colour = "#00695c" }
-
-    // Por cada registro en el array se agrega uno de estos
-    cardsToShow += '<div id=card' + value.codigo + ' class="col s12 m6 l3">' +
-      '                <div class="card small animated fadeInUp"  style="background-color:' + colour + '">' +
-      '                    <div class="card-content white-text">' +
-      '                        <span class="card-title">' + value.nombre + '</span>' +
-      '                        <p>' + value.autor + '</p>' +
-      '                        <p>' + value.Estado + '</p>' +
-      '                        <p>' + value.genero + '</p>' +
-      '                    </div>' +
-      '                </div>' +
-      '            </div>';
-  })
-
-
-  $('#cards').html(cardsToShow);
-}
-
-// La función que manda a llamar mi PHP
-function getData() {
-  $.ajax({
-    type: 'POST',
-    url: 'controllers/dross.php',
-
-    success: function (response) {
-      console.log(response);
-
-
-      var mylibros = JSON.parse(response);
-      rellenar(mylibros);
-    }
-  });
-}
-
-
-$(document).ready(function () {
-  $('select').material_select();
-  $('.slider').slider({ indicators: false });
-});
-
 function prueba() {
   event.preventDefault();
   var nombre;
@@ -88,22 +30,98 @@ function prueba() {
         $('#genero').val("1");
         $('#estado').val("1");
         $('#dependencia').val("1");
-        Materialize.toast(data, 4000, 'rounded');
+        M.toast({html: data +'ha sido agregado ', classes: 'rounded'});
+
 
       });
-  } else { Materialize.toast("Campos vacios", 4000, 'rounded'); }
+  } else {   M.toast({html: 'Campos basios !!!', classes: 'rounded'});
+}
 
-  console.log(nombre);
-  console.log(autor);
-  console.log(origen);
-  console.log(editorial);
-  console.log(genero);
-  console.log(estado);
-  console.log(dependencia);
 
 
 
 
 }
+function trambolico(){
+}
 
 
+
+function rellenar(array) {
+
+
+  var cardsToShow = '';
+
+
+
+  jQuery.each(array, function (index, value) {
+   
+    var colour;
+
+    if (value.Estado == "Ocupado") {
+
+      colour = "#bf360c  "
+    } else { colour = "#00838f  " }
+
+    // Por cada registro en el array se agrega uno de estos
+    cardsToShow += '<div id=card' + value.codigo + ' class="col s12 m6 l3">' +
+      '                <div class="card animated fadeInUp"  style="background-color:' + colour + '">' +
+      '                    <div class="card-content white-text">' +
+      '                        <span class="card-title">' + value.nombre + '</span>' +
+      '                        <p>' + value.autor + '</p>' +
+/*       '                        <p>' + value.Estado + '</p>' + */
+      '                        <p>' + value.genero + '</p>' +
+      '                    </div>' +
+      '                </div>' +
+      '            </div>';
+  })
+
+
+  $('#cards').html(cardsToShow);
+}
+
+// La función que manda a llamar mi PHP
+function getData() {
+  $.ajax({
+    type: 'POST',
+    url: 'controllers/dross.php',
+
+    success: function (response) {
+    
+
+      var mylibros = JSON.parse(response);
+      rellenar(mylibros);
+    }
+  });
+}
+
+
+
+function tostada()
+{
+  var buscar;
+  buscar = $('#search').val();
+  M.toast({html: "Buscando"+" "+ buscar , classes: 'rounded'});
+}
+
+function  runScript(e) {
+
+  if (e.keyCode == 13) {
+    var buscar;
+  buscar = $('#search').val();
+    tostada();
+    getData();  
+
+/*     M.toast({html: buscar, classes:'rounded'})
+ */    
+    return false;
+  }
+  else {
+
+      return true;
+  }
+}
+
+window.search = function () {
+  M.toast({html: buscar, classes:'rounded'})
+}

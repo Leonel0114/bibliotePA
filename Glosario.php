@@ -1,71 +1,98 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/materialize.css">
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Glosario</title>
 
-    <!--Import Google Icon Font-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!--Import Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <!-- Compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/css/materialize.min.css">
+  <!-- Compiled and minified CSS -->
+  <link rel="stylesheet" href="css/materialize.min.css">
+  <!-- Mis estilos -->
+  <link rel="stylesheet" href="css/index.css">
 
-    <!-- Mis estilos -->
-    <link rel="stylesheet" href="css/index.css">
+  <!-- Libreria de animacion -->
+  <link rel="stylesheet" href="css/animate.css">
+  <link rel="icon" href="img/logo.png">
+  <script src="js/jquery.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/scripts.js"></script>
 
-    <!-- Libreria de animacion -->
-    <link rel="stylesheet" href="css/animate.css">
 </head>
 
 
 
-    
-<body class="container gray lighten-2">
-<nav class="blue-grey darken-2">
-        <div class="nav-wrapper container">
-            <a href="index.php" class="brand-logo"> BibliotePA</a>
 
-            <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li>
-                    <a href="Login.php">Glosario</a>
-                </li>
-                <li>
-                    <a href="Buscar.php">Buscar Libros</a>
-                </li>
-            </ul>
+<body>
+  <nav class="transparent z-depth-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="index.php" class="brand-logo grey-text text-darken-2">Logo</a>
+
+      <ul class="right hide-on-med-and-down">
+        <li>
+          <a class="grey-text text-darken-2" href="Agregar.php">Agregar Libros</a>
+        </li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li>
+          <a href="#">Navbar Link</a>
+        </li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger">
+        <i class="material-icons">menu</i>
+      </a>
+    </div>
+  </nav>
+
+
+
+
+
+<br>
+
+  <nav class="container">
+    <div class="nav-wrapper">
+      <form>
+        <div class="input-field cyan darken-2">
+          <input id="search" type="search" onkeypress="return runScript(event);" required>
+          <label class="label-icon" for="search">
+            <i class="material-icons ">search</i>
+          </label>
+          <i class="material-icons">close</i>
         </div>
-        
-    <div class="row">
-        <h1 class="title col s12" style="color:chocolate;">Mostrando Datos</h1>
+      </form>
     </div>
+  </nav>
 
-    <div class="row">
-        <div class="input-field col s4">
-            <button type='submit' class="btn waves-effect waves-light" onclick="getData()">Obtener data</button>
-        </div>
-    </div>
-    <br>
 
-    <!-- div que se rellena mediante javascript, con los datos sacados de php -->
-    <div id="cards" class="row">
-        <a href="http://facebook.com/0114Leonel" style="text-derocation: nule;" target="_blank">Hola Mundo! </a>
-    </div>
-    <br>
 
-    <!-- Libreria JQuery -->
-    <script src="http://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-        crossorigin="anonymous"></script>
 
-    <!-- Scripts de Materialize -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.4/js/materialize.min.js"></script>
+  
+  <!-- div que se rellena mediante javascript, con los datos sacados de php -->
+  <div id="cards" class="row">
 
-    <!-- Mis Scripts -->
-    <script src="js/scripts.js"></script>
+  </div>
+  <br>
+
+  <!-- Libreria JQuery -->
+  <script src="js/jquery.js">  </script>
+
+  <!-- Scripts de Materialize -->
+  <script src="js/materialize.min.js"></script>
+  <!-- Mis Scripts -->
+  <script src="js/scripts.js"></script>
 
 </body>
 
-    
+
+<script src="js/init.js"></script>
 
 </html>

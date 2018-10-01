@@ -1,10 +1,9 @@
 <?php
 include ("sql.php");
-include "data.php";
 $conn =new SQL();
 $conn ->start();
 
-$sql= "SELECT codigo, nombre, autor, genero, dependencia, Estado FROM libros";
+$sql= "SELECT codigo, nombre, autor, genero, dependencia, Estado FROM libros WHERE nombre LIKE 'El%' ";
 $resultados= $conn->select($sql);
 
 $campos=array();
