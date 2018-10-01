@@ -18,21 +18,24 @@
       <a href="index.php" class="brand-logo">
                 <img src="img/one.png" alt="" class="logo">
             </a>
-
-      <ul class="right hide-on-med-and-down">
-        <li>
-          <a href="Login.php">Login</a>
-        </li>
-      </ul>
       <ul class="right hide-on-med-and-down">
         <li>
           <a href="Agregar.php">Agregar Libros</a>
         </li>
       </ul>
 
-      <ul id="nav-mobile" class="sidenav">
+      <ul id="nav-mobile" class="sidenav user-view">
+      <div class="background">
+        <img src="img/naas.jpg">
+      </div>
+
+          <li><div class="divider"></div></li>
+
         <li>
-          <a href="#">Navbar Link</a>
+          <a href="Agregar.php">Agregar libros</a>
+        </li>
+        <li>
+          <a href="Glosario.php">Glosario de Libros</a>
         </li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger">
