@@ -43,9 +43,18 @@
         </li>
       </ul>
 
-      <ul id="nav-mobile" class="sidenav">
+     <ul id="nav-mobile" class="sidenav user-view">
+      <div class="background">
+        <img src="img/naas.jpg">
+      </div>
+
+          <li><div class="divider"></div></li>
+
         <li>
-          <a href="#">Navbar Link</a>
+          <a href="Agregar.php">Agregar libros</a>
+        </li>
+        <li>
+          <a href="index.php">Pagina Princial</a>
         </li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger">
@@ -60,7 +69,7 @@
 
 <br>
 
-  <nav class="container">
+  <nav class="container" >
     <div class="nav-wrapper">
       <form>
         <div class="input-field cyan darken-2">
@@ -76,12 +85,16 @@
 
 
 
-
+<br>
   
   <!-- div que se rellena mediante javascript, con los datos sacados de php -->
-  <div id="cards" class="row">
+  <div class="container">
+  <div id="cards" class="row wide nomar">
+
+</div>
 
   </div>
+  
   <br>
 
   <!-- Libreria JQuery -->

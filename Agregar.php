@@ -13,7 +13,8 @@
   <script src="js/jquery.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/scripts.js"></script>
-  
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
 
 
 </head>
@@ -32,9 +33,18 @@
         </li>
       </ul>
 
-      <ul id="nav-mobile" class="sidenav">
+     <ul id="nav-mobile" class="sidenav user-view">
+      <div class="background">
+        <img src="img/naas.jpg">
+      </div>
+
+          <li><div class="divider"></div></li>
+
         <li>
-          <a href="#">Navbar Link</a>
+          <a href="index.php">Pagina Principal</a>
+        </li>
+        <li>
+          <a href="Glosario.php">Glosario de Libros</a>
         </li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger">

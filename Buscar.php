@@ -29,6 +29,8 @@
         </div>
     </nav>
 
+    
+
     <h1>Trabajando</h1>
     <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel ex omnis maiores, magnam quia asperiores, ipsum molestiae
         ab necessitatibus perferendis quasi facilis recusandae atque laudantium nulla est! Incidunt, soluta quidem. </p>
