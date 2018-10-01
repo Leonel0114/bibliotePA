@@ -15,7 +15,9 @@
 <body>
   <nav class="transparent z-depth-3" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.php" class="brand-logo">logo</a>
+      <a href="index.php" class="brand-logo">
+                <img src="img/one.png" alt="" class="logo">
+            </a>
 
       <ul class="right hide-on-med-and-down">
         <li>
