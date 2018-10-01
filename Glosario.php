@@ -33,7 +33,9 @@
 <body>
   <nav class="transparent z-depth-1" role="navigation">
     <div class="nav-wrapper container">
-      <a id="logo-container" href="index.php" class="brand-logo grey-text text-darken-2">Logo</a>
+      <a id="logo-container" href="index.php" class="brand-logo grey-text text-darken-2">
+      <img src="img/one.png" alt="" class="logo">
+      </a>
 
       <ul class="right hide-on-med-and-down">
         <li>
