@@ -86,6 +86,93 @@
 
 
 <br>
+
+<div class="container row">
+
+
+  <div class="card small  col s6 ">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/ca.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Casa Amiga<i class="material-icons right">more_vert</i></span>
+      <p class="tab "><a class="active"  href="ca.php">Libros</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Casa Amiga<i class="material-icons right">close</i></span>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat error voluptatibus veritatis quas! </p>
+    </div>
+  </div>
+
+
+  <div class="card small  col s6 ">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/cerro.jpg">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Cerro de Ortega<i class="material-icons right">more_vert</i></span>
+      <p><a href="ca.php">Libros</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Cerro de Ortega<i class="material-icons right">close</i></span>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat error voluptatibus veritatis quas! </p>
+    </div>
+  </div>
+</div>
+<div class="container row">
+
+  <div class="card small  col s6 ">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/suchi.JPG">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Suchitlan<i class="material-icons right">more_vert</i></span>
+      <p><a href="ca.php">Libros</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Suchitlan<i class="material-icons right">close</i></span>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat error voluptatibus veritatis quas! </p>
+    </div>
+  </div>
+
+
+
+  <div class="card small  col s6 ">
+    <div class="card-image waves-effect waves-block waves-light">
+      <img class="activator" src="img/quese.JPG">
+    </div>
+    <div class="card-content">
+      <span class="card-title activator grey-text text-darken-4">Queseria<i class="material-icons right">more_vert</i></span>
+      <p><a href="ca.php">Libros</a></p>
+    </div>
+    <div class="card-reveal">
+      <span class="card-title grey-text text-darken-4">Queseria<i class="material-icons right">close</i></span>
+      <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat error voluptatibus veritatis quas! </p>
+    </div>
+  </div>
+</div>
+
+<!-- 
+Ultiam de cofradia -->
+
+<div class="container row">
+    <div class="card small  col s12 ">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="img/cofra.JPG">
+        </div>
+        <div class="card-content">
+          <span class="card-title activator grey-text text-darken-4">Cofradia de Suchitlan<i class="material-icons right">more_vert</i></span>
+          <p><a href="ca.php">Libros</a></p>
+        </div>
+        <div class="card-reveal">
+          <span class="card-title grey-text text-darken-4">Cofradia de Suchitlan<i class="material-icons right">close</i></span>
+          <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati fugiat error voluptatibus veritatis quas! </p>
+        </div>
+      </div>
+
+</div>
+
+
   
   <!-- div que se rellena mediante javascript, con los datos sacados de php -->
   <div class="container">
