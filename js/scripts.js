@@ -118,15 +118,28 @@ function tostada() {
   M.toast({ html: "Buscando" + " " + buscar, classes: "rounded" });
 }
 
+
+function getDataFromInput()
+{
+  $.ajax({
+    type: "POST",
+    url: "controllers/dross.php",
+
+    success: function(response) {
+      var mylibros = JSON.parse(response);
+      rellenar(mylibros);
+    }
+  });
+
+}
+
 function runScript(e) {
   if (e.keyCode == 13) {
     var buscar;
     buscar = $("#search").val();
     tostada();
-    getData();
-
-    /*     M.toast({html: buscar, classes:'rounded'})
- */
+    getDataFromInput()
+    //getData();
 
     return false;
   } else {

@@ -63,3 +63,9 @@ footer.page-footer {
 body{
   background-color: #efebe9     ;
 }
+
+.nomtop{
+  margin-top: 0 !important;
+  margin-top: -70px !important;
+  margin-bottom: 5%;
+}

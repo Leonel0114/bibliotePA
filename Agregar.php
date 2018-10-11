@@ -29,32 +29,54 @@
    
       <ul class="right hide-on-med-and-down">
         <li>
-          <a href="Agregar.php">Agregar Libros</a>
+          <a class="flow-text " href="Glosario.php">Glosario</a>
         </li>
       </ul>
 
      <ul id="nav-mobile" class="sidenav user-view">
-      <div class="background">
-        <img src="img/naas.jpg">
-      </div>
-
-          <li><div class="divider"></div></li>
+        <div class="background">
+          <img src="img/naas.jpg">
+        </div>
 
         <li>
-          <a href="index.php">Pagina Principal</a>
+          <div class="divider"></div>
+        </li>
+
+        <li>
+          <a href="index.php">Home</a>
         </li>
         <li>
-          <a href="Glosario.php">Glosario de Libros</a>
+          <a href="ca.php">Glosario de Libros</a>
+        </li>
+        <li>
+          <div class="divider"></div>
+        </li>
+        <li>
+          <a href="ca.php">Casa Amiga</a>
+        </li>
+        <li>
+          <a href="cdo.php">Cerro de Ortega</a>
+        </li>
+        <li>
+          <a href="cofra.php">Cofradia de Suchitlan</a>
+        </li>
+        <li>
+          <a href="queseria.php">Queseria</a>
+        </li>
+
+        <li>
+          <a href="suchi.php">Suchitlan</a>
         </li>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger">
         <i class="material-icons">menu</i>
       </a>
+      </a>
     </div>
   </nav>
 
   <div class="container">
-    <h1 class="blue-grey-text sams">Libros</h1>
+    <h1 class="blue-grey-text ">Libros</h1>
     <blockquote>Ingrese libros a la base de datos</blockquote>
     <form class="col s12">
       <div class="row">
